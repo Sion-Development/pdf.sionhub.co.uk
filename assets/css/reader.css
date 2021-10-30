@@ -1,0 +1,39 @@
+html {
+    background-color: #111;
+}
+
+#canvas_container {
+    width: auto;
+    height: auto;
+}
+
+#canvas_container {
+    background: #333;
+    text-align: center;
+    border: solid 3px;
+}
+
+#navigation_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 3px solid #111;
+}
+
+#title {
+    height: 70px;
+    font-size: 60px;
+}
+
+.divider {
+    width: 15px;
+    height: auto;
+    display: inline-block;
+}
+
+.dividerS {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+}

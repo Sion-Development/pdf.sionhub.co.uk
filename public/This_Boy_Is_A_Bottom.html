@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../assets/css/reader.css" rel="stylesheet" type="text/css">
+    <title>This Boy Is A Bottom</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sbuttons/dist/sbuttons.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" rel="stylesheet">
+</head>
+<body>
+<div id="my_pdf_viewer">
+    <div>
+        <a class="sbtn purple-btn" href="/">home</a>
+        <div class="sbtn black-btn" id="title">This Boy Is A Bottom - 163 pages</div>
+    </div>
+    <div id="navigation_controls">
+        <button class="sbtn  previous-arrow-btn purple-btn" id="go_previous">Previous</button>
+        <div class="dividerS"></div>
+        <input class="sbtn purple-btn" id="current_page" type="number" value="1"/>
+        <div class="dividerS"></div>
+        <button class="sbtn  next-arrow-btn purple-btn" id="go_next">Next</button>
+        <div class="divider"></div>
+        <button class="sbtn  neon-btn purple-btn" id="zoom_in">Zoom in <i class="fas fa-search-plus"></i></button>
+        <div class="dividerS"></div>
+        <button class="sbtn  neon-btn purple-btn" id="zoom_out">Zoom out <i class="fas fa-search-minus"></i></button>
+    </div>
+
+    <div id="canvas_container">
+        <canvas id="pdf_renderer"></canvas>
+    </div>
+</div>
+<script>
+    pdfjsLib.getDocument('./This_Boy_Is_A_Bottom.pdf').then((pdf) => {
+
+        myState.pdf = pdf;
+        render();
+
+    });
+</script>
+<script src="../assets/js/reader.js"></script>
+</body>
+</html>

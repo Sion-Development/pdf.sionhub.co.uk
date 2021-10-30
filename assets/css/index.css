@@ -1,0 +1,22 @@
+html {
+    background-color: #111;
+}
+.Menu_Container {
+    background-color: #444;
+    border: 3px solid #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img_Container {
+    border: 3px solid #111;
+    padding: 3px;
+    background-color: #222;
+}
+
+.imgButton {
+    text-align: center;
+}
+td {
+}
